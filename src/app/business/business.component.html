@@ -1,1 +1,10 @@
-<p>business works!</p>
+<div class="business-container">
+	<div class="title">S E R V I C I O S</div>
+	<div class="business-list">
+		<div class="card" *ngFor="let business of businessList">
+			<img [src]="business.img" [alt]="business.id">
+			<h1>{{business.title}}</h1>
+			<p>{{business.text}}</p>
+		</div>
+	</div>
+</div>

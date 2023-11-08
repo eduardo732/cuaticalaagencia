@@ -5,7 +5,7 @@
   <app-socialmedia class="social-media"></app-socialmedia>
 
   <ul class="menu" [ngClass]="{ open: isMenuOpen }" (mouseleave)="toggleMenu()">
-    <li><a routerLink="/">Inicio</a></li>
+    <li ><a routerLink="/" (click)="toggleMenu()">Inicio</a></li>
     <li><a routerLink="/nosotros">Nosotros</a></li>
     <li><a routerLink="/servicios">Servicios</a></li>
     <li><a routerLink="/proyectos">Proyectos</a></li>

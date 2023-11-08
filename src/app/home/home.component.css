@@ -36,8 +36,8 @@
 	transform: translate(-50%, -50%); /* Centra la frase correctamente */
 	font-size: 30px; /* Tamaño de fuente de la frase */
 	color: white; /* Color del texto */
-	background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para hacer que el texto sea legible */
-	padding: 10px 20px; /* Espaciado interior del cuadro de texto */
-	border-radius: 30px; /* Borde redondeado del cuadro de texto */
+	background: rgba(0, 0, 0, 0); /* Fondo semitransparente para hacer que el texto sea legible */
+	padding: 20px 40px; /* Espaciado interior del cuadro de texto */
+	border-radius: 40px; /* Borde redondeado del cuadro de texto */
 	border: 1px solid white;
 }
