@@ -98,3 +98,11 @@
 	justify-content: flex-start;
 }
 
+.social-media {
+	position: relative;
+	top: 600px;
+	left: 100px;
+	display: flex;
+	font-size: 25px;
+}
+

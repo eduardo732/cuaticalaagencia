@@ -6,7 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutComponent } from './about/about.component';
-import { BusinessComponent } from './business/business.component'
+import { BusinessComponent } from './business/business.component';
+import { SocialmediaComponent } from './socialmedia/socialmedia.component'
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { BusinessComponent } from './business/business.component'
     HomeComponent,
     NavbarComponent,
     AboutComponent,
-    BusinessComponent
+    BusinessComponent,
+    SocialmediaComponent
   ],
   imports: [
     BrowserModule,

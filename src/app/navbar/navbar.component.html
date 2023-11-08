@@ -2,6 +2,8 @@
   <div class="menu-icon" (click)="toggleMenu()">
     <i class="fas fa-bars fa-3x"></i>
   </div>
+  <app-socialmedia class="social-media"></app-socialmedia>
+
   <ul class="menu" [ngClass]="{ open: isMenuOpen }" (mouseleave)="toggleMenu()">
     <li><a routerLink="/">Inicio</a></li>
     <li><a routerLink="/nosotros">Nosotros</a></li>
