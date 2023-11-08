@@ -1,0 +1,43 @@
+/* Crea un contenedor que ocupa el 100% del viewport */
+.container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+/* Estilo para el slider de imágenes */
+.slider {
+	display: flex;
+	width: 500%; /* Ancho total del slider (5 imágenes en este caso) */
+	height: 100%;
+	transition: transform 1.5s ease; 
+}
+
+/* Estilo de cada slide */
+.slide {
+	flex: 20%; /* Ancho de cada slide en relación al slider */
+	position: relative;
+	overflow: hidden; /* Evita que la frase se desborde fuera del slide */
+}
+
+/* Establece el estilo de las imágenes */
+.slide img {
+	width: 100%; /* Ancho de cada imagen en relación al slide */
+	height: 100%;
+	object-fit: fill; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+/* Estilo para la frase */
+.caption {
+	position: absolute; /* Establece la posición absoluta para superponer la frase */
+	top: 90%; /* Alinea la frase verticalmente en el centro del slide */
+	left: 25%; /* Alinea la frase horizontalmente en el centro del slide */
+	transform: translate(-50%, -50%); /* Centra la frase correctamente */
+	font-size: 30px; /* Tamaño de fuente de la frase */
+	color: white; /* Color del texto */
+	background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para hacer que el texto sea legible */
+	padding: 10px 20px; /* Espaciado interior del cuadro de texto */
+	border-radius: 30px; /* Borde redondeado del cuadro de texto */
+	border: 1px solid white;
+}
