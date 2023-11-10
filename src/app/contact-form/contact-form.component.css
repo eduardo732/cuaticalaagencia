@@ -19,12 +19,17 @@ input, textarea {
   margin-bottom: 10px;
 }
 
+.button-area {
+  display: flex;
+  justify-content: center;
+}
 button {
-  background-color: #4caf50;
+  background-color: black;
   color: white;
+  font-size: 20px;
   padding: 10px 15px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
 }
 

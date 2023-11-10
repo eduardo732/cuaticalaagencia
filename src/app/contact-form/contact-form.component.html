@@ -20,5 +20,7 @@
     <textarea id="message" name="message" ngModel required></textarea>
     <div class="error-message">{{ messageError }}</div>
   </div>
-  <button type="submit" [disabled]="!contactForm.valid">¡ATRÉVETE!</button>
+  <div class="button-area">
+    <button type="submit" [disabled]="!contactForm.valid">¡ATRÉVETE!</button>
+  </div>
 </form>

@@ -1,5 +1,6 @@
 import { Component, OnInit  } from '@angular/core';
 import { slideInOutAnimation } from '../utils/animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { slideInOutAnimation } from '../utils/animations';
   animations: [slideInOutAnimation]
 })
 export class HomeComponent {
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     const slider = document.querySelector(".slider") as HTMLElement;
@@ -25,5 +26,9 @@ export class HomeComponent {
     }
 
     setInterval(nextImage, 3500); // Cambia de imagen cada x segundos
+  }
+
+  goToContact(): void {
+    this.router.navigate(['/contacto'])
   }
 }
