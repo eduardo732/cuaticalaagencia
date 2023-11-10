@@ -7,11 +7,12 @@
 }
 
 .title {
-	margin-top: 90px;
+	margin-top: 70px;
 	display: flex;
 	justify-content: center;
 	color: white;
 	font-size: 70px;
+	text-shadow: 20px 15px 7px black;
 }
 
 .business-list {

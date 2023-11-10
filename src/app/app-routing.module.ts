@@ -3,20 +3,30 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BusinessComponent } from './business/business.component';
+import { slideInOutAnimation } from './utils/animations';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'Cuática La Agencia'
+    title: 'Cuática La Agencia',
+    data: { animation: slideInOutAnimation },
   },
   {
     path: 'nosotros',
-    component: AboutComponent
+    component: AboutComponent,
+    data: { animation: slideInOutAnimation },
   },
   {
     path: 'servicios',
-    component: BusinessComponent
+    component: BusinessComponent,
+    data: { animation: slideInOutAnimation },
+  },
+  {
+    path: 'contacto',
+    component: ContactComponent,
+    data: { animation: slideInOutAnimation },
   }
 ];
 

@@ -1,9 +1,11 @@
 import { Component, OnInit  } from '@angular/core';
+import { slideInOutAnimation } from '../utils/animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  animations: [slideInOutAnimation]
 })
 export class HomeComponent {
   constructor() { }
@@ -22,6 +24,6 @@ export class HomeComponent {
       }
     }
 
-    setInterval(nextImage, 5000); // Cambia de imagen cada 5 segundos
+    setInterval(nextImage, 3500); // Cambia de imagen cada x segundos
   }
 }

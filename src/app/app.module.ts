@@ -8,6 +8,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutComponent } from './about/about.component';
 import { BusinessComponent } from './business/business.component';
 import { SocialmediaComponent } from './socialmedia/socialmedia.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactComponent } from './contact/contact.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 
 @NgModule({
@@ -17,12 +24,17 @@ import { SocialmediaComponent } from './socialmedia/socialmedia.component'
     NavbarComponent,
     AboutComponent,
     BusinessComponent,
-    SocialmediaComponent
+    SocialmediaComponent,
+    ContactComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule, 
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
