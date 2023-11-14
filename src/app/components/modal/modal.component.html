@@ -1,0 +1,7 @@
+<div class="modal" (click)="close()">
+  <div class="modal-content" [ngClass]="{'error': isError}">
+    <h2 [ngStyle]="{'color': titleColor}">{{ title }}</h2>
+    <p>{{ message }}</p>
+    <button (click)="close()">Cerrar</button>
+  </div>
+</div>

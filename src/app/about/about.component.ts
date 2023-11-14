@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { slideInOutAnimation } from '../utils/animations';
+import { Title } from '@angular/platform-browser';
+import { SeoService } from '../utils/seo.service';
 
 
 @Component({
@@ -9,5 +11,13 @@ import { slideInOutAnimation } from '../utils/animations';
   animations: [slideInOutAnimation]
 })
 export class AboutComponent {
+  constructor( private title: Title, private seo: SeoService ) {}
 
+  ngOnInit() {
+    let titleString: string = "Nosotros";
+    this.title.setTitle(titleString);
+    this.seo.generateTags({
+      slug: "Nosotros"
+    });
+  }
 }

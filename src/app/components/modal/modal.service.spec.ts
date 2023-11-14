@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ContactFormService } from './contact-form/contact-form.service';
+import { ModalService } from './modal.service';
 
-describe('ContactFormService', () => {
-  let service: ContactFormService;
+describe('ModalService', () => {
+  let service: ModalService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ContactFormService);
+    service = TestBed.inject(ModalService);
   });
 
   it('should be created', () => {

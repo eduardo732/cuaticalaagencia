@@ -1,0 +1,65 @@
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+div {
+  margin-bottom: 15px;
+  transition: margin-bottom 0.3s ease; /* Agregada transición para suavizar los cambios de margen */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  transition: color 0.3s ease; /* Agregada transición para suavizar los cambios de color */
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease; /* Agregada transición para suavizar los cambios de borde */
+}
+
+/* Estilo cuando el campo está enfocado */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #FF00E7; /* Cambiado el color del borde cuando el campo está enfocado */
+}
+
+.button-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Agregado espacio superior para separar el botón del resto del formulario */
+}
+
+button {
+  background-color: #FF00E7;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Agregada transición para suavizar los cambios de color del botón */
+}
+
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+
+button:hover:not(:disabled){
+  transform: scale(1.1); /* Escala el botón al hacer hover */
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.9); /* Escala el botón cuando está presionado */
+}

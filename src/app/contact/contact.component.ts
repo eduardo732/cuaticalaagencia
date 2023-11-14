@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { slideInOutAnimation } from '../utils/animations';
+import { Title } from '@angular/platform-browser';
+import { SeoService } from '../utils/seo.service';
 
 @Component({
   selector: 'app-contact',
@@ -10,4 +12,14 @@ import { slideInOutAnimation } from '../utils/animations';
 export class ContactComponent {
   instagramColor: string = 'black';
   linkedinColor: string = 'black';
+
+  constructor(private title: Title, private seo: SeoService) {}
+
+  ngOnInit() {
+    let titleString: string = "Contacto";
+    this.title.setTitle(titleString);
+    this.seo.generateTags({
+      slug: "Contacto"
+    });
+  }
 }

@@ -3,16 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutComponent } from './about/about.component';
 import { BusinessComponent } from './business/business.component';
-import { SocialmediaComponent } from './socialmedia/socialmedia.component'
+import { SocialmediaComponent } from './components/socialmedia/socialmedia.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ContactFormComponent } from './contact/contact-form/contact-form.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalComponent } from './components/modal/modal.component';
 
 
 
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     BusinessComponent,
     SocialmediaComponent,
     ContactComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
