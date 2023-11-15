@@ -14,6 +14,7 @@ import { ContactFormComponent } from './contact/contact-form/contact-form.compon
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ModalComponent } from './components/modal/modal.component';
+import { ButtonComponent } from './components/button/button.component';
 
 
 
@@ -28,7 +29,8 @@ import { ModalComponent } from './components/modal/modal.component';
     SocialmediaComponent,
     ContactComponent,
     ContactFormComponent,
-    ModalComponent
+    ModalComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

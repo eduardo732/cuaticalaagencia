@@ -10,6 +10,7 @@ export class ModalComponent {
   @Input() title: string = '';
   @Input() message: string = '';
   @Input() isError: boolean = true;
+  titleButton: string = 'Cerrar';
 
   constructor( private modalService: ModalService ) {}
 

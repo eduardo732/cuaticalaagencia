@@ -28,6 +28,7 @@
       name="email"
       [(ngModel)]="model.email"
       required
+      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
       (ngModelChange)="validateEmail()"
     />
     <div *ngIf="model.emailError" class="error-message">
@@ -61,6 +62,10 @@
     </div>
   </div>
   <div class="button-area">
-    <button type="submit" [disabled]="contactForm.invalid">¡ATRÉVETE!</button>
+    <app-button
+      [type]="typeButton"
+      [title]="titleButton"
+      [isDisabled]="contactForm.invalid"
+    ></app-button>
   </div>
 </form>

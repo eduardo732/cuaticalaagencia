@@ -28,6 +28,8 @@ interface Modal {
   styleUrls: ['./contact-form.component.css'],
 })
 export class ContactFormComponent {
+  typeButton: string = 'submit';
+  titleButton: string = '¡ATRÉVETE!';
   model: ContactFormModel = {
     name: '',
     email: '',
@@ -94,14 +96,14 @@ export class ContactFormComponent {
   openSuccessModal() {
     this.modal.isError = false;
     this.modal.title = '¡Éxito!';
-    this.modal.message = 'Gracias por tu mensaje. Hemos recibido la información correctamente.';
+    this.modal.message = 'Gracias por tu mensaje. Hemos recibido tú contacto correctamente.';
     this.modalService.openModal(); 
   }
 
   openErrorModal() {
-    this.modal.isError = false;
+    this.modal.isError = true;
     this.modal.title = 'Error';
-    this.modal.message = 'Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.';
+    this.modal.message = 'Hubo un problema al enviar tu mensaje. Tambíen puedes comunicarte con nosotros escribiendo a hola@cuaticalaagencia.com';
     this.modalService.openModal(); 
   }
 
@@ -109,6 +111,3 @@ export class ContactFormComponent {
     this.modalService.closeModal();
   }
 }
-//TODO: Validar email antes de enviar la petición
-//TODO: atomizar componente botón
-//TODO: Cambiar color al modal según respuesta

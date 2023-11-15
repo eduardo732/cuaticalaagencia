@@ -38,28 +38,3 @@ textarea:focus {
   margin-top: 20px; /* Agregado espacio superior para separar el botón del resto del formulario */
 }
 
-button {
-  background-color: #FF00E7;
-  color: white;
-  font-size: 20px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: transform 0.3s ease; /* Agregada transición para suavizar los cambios de color del botón */
-}
-
-
-button:disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
-}
-
-
-button:hover:not(:disabled){
-  transform: scale(1.1); /* Escala el botón al hacer hover */
-}
-
-button:active:not(:disabled) {
-  transform: scale(0.9); /* Escala el botón cuando está presionado */
-}

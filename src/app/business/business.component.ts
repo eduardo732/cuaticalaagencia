@@ -22,8 +22,5 @@ export class BusinessComponent {
   ngOnInit() {
     let titleString: string = "Cuáticos";
     this.title.setTitle(titleString);
-    this.seo.generateTags({
-      slug: "Cuáticos"
-    });
   }
 }

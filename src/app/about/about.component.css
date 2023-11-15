@@ -9,16 +9,18 @@
 
 .card {
 	display: flex;
-	height: 70%;
-	width: 70%;
+	height: 800px;
+	width: 1200px;
 	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 15%;
+	left: 20%;
 }
 
 .image-container {
 	display: flex;
+	height: 650px;
+	width: 500px;
+	position: absolute;
 }
 
 .image {
@@ -26,45 +28,47 @@
 }
 
 .image img{
-	height: 700px;
+	height: 650px;
 	width: 500px;
+	position: relative;
+	border-radius: 10px;
 }
 
 .box {
 	height: 250px;
-	width: 340px;
+	width: 350px;
 	background-color: rgba(255, 255, 255, 0.315);
-	position: absolute;
+	position: relative;
 	border-radius: 30px;
 	top: 255px;
 	left: 80px;
 }
 
 .title {
-	position: absolute;
-	top: 190px;
-	left: 120px;
+	bottom: 90px;
+	left: 20px;
+	position: relative;
 }
 
 .title img {
-	width: 250px;
+	width: 300px;
 }
 
 .subtitle {
 	position: absolute;
 	color: white;
 	width: 130px;
-	top: 340px;
-	left: 100px;
+	top: 80px;
+	left: 35px;
 	font-size: 25px;
 }
 
 .line {
-	position: absolute;
+	position: relative;
 	border-bottom: 1px solid white;
 	width: 280px;
-	top: 390px;
-	left: 100px;
+	bottom: 125px;
+	left: 25px;
 }
 
 .definition {
@@ -72,8 +76,8 @@
 	color: white;
 	font-size: 20px;
 	width: 280px;
-	top:400px;
-	left: 100px;
+	top:150px;
+	left: 25px;
 }
 
 .url {
@@ -81,17 +85,17 @@
 	color: white;
 	font-size: 20px;
 	width: 280px;
-	top:530px;
-	left: 140px;
+	top: 280px;
+	left: 60px;
 }
 
-.paragraph {
+.paragraph-container {
+	width: 50%;
+	left: 570px;
+	top: 200px;
 	position: relative;
 	color: white;
 	font-size: 25px;
-	width: 50%;
-	left: 550px;
-	top: 300px;
 	text-align: justify;
 	display: flex;
 	flex-direction: column;
@@ -100,9 +104,171 @@
 
 .social-media {
 	position: relative;
-	top: 600px;
-	left: 100px;
+	top: 40px;
+	left: 35%;
 	display: flex;
 	font-size: 25px;
+	margin-bottom: 100px;
 }
 
+.icon {
+	color: #ffffff;
+	display: flex;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 1700px) {
+  .card {
+    left: 15%; 
+	}
+}
+
+@media (max-width: 1500px) {
+  .card {
+    left: 10%; 
+	}
+}
+
+@media (max-width: 1350px) {
+  .card {
+    left: 5%; 
+	}
+}
+
+@media (max-width: 1300px) {
+  .card {
+    left: 3%; 
+	}
+}
+
+@media (max-width: 1250px) {
+	.container-about {
+		overflow-y: scroll;
+	}
+  .card {
+		height: 100%;
+		width: 100%;
+		flex-direction: column;
+	}
+	.image-container {
+		display: flex;
+		height: 350px;
+		width: 250px;
+		left: 35%;
+	}
+	
+	.image img{
+		height: 450px;
+		width: 350px;
+	}
+
+	.box {
+		width: 300px;
+		position: absolute;
+		top: 150px;
+		left: 25px;
+	}
+	
+	.title {
+		bottom: 70px;
+		left: 20px;
+		position: relative;
+	}
+	
+	.title img {
+		width: 250px;
+	}
+	
+	.line {
+		width: 260px;
+		bottom: 90px;
+		left: 15px;
+	}
+	
+	.url {
+		width: 280px;
+		top: 250px;
+		left: 40px;
+	}
+
+	.paragraph-container {
+		width: 50%;
+		left: 280px;
+		top: 500px;
+	}
+}
+
+@media (max-width: 1000px) {
+  .card {
+		height: 100%;
+		width: 100%;
+		flex-direction: column;
+	}
+	.image-container {
+		left: 30%;
+	}
+	
+	.paragraph-container {
+		width: 50%;
+		left: 23%;
+		top: 500px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.image-container {
+		left: 30%;
+	}
+	
+	.paragraph-container {
+		width: 50%;
+		left: 23%;
+		top: 500px;
+	}
+}
+
+@media (max-width: 900px) {
+	.image-container {
+		left: 27%;
+	}
+}
+
+@media (max-width: 800px) {
+	.image-container {
+		left: 25%;
+	}
+}
+
+@media (max-width: 750px) {
+	.image-container {
+		left: 23%;
+	}
+}
+
+@media (max-width: 650px) {
+	.image-container {
+		left: 20%;
+	}
+}
+
+@media (max-width: 550px) {
+	.image-container {
+		left: 8%;
+	}
+	.paragraph-container {
+		width: 70%;
+		left: 10%;
+	}
+}
+
+@media (max-width: 450px) {
+	.image-container {
+		left: 4%;
+	}
+}
+
+@media (max-width: 400px) {
+	.image-container {
+		left: 0%;
+	}
+}

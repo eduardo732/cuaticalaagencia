@@ -16,8 +16,5 @@ export class AboutComponent {
   ngOnInit() {
     let titleString: string = "Nosotros";
     this.title.setTitle(titleString);
-    this.seo.generateTags({
-      slug: "Nosotros"
-    });
   }
 }

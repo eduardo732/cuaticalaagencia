@@ -11,9 +11,7 @@ export class SeoService {
   generateTags(config: any) {
     config = {
       title: "Cuática La Agencia",
-      description: "Cuática La agencia",
-      image: "assets/about/logo.png",
-      slug: "cuaticalaagencia.com",
+      description: "Landing page de Cuática La agencia",
       keywords: "Marketing digital, Influencers, Eventos, Fotograía, Cuática, cuatica, cuatica la agencia",
       ...config
     }

@@ -18,8 +18,5 @@ export class ContactComponent {
   ngOnInit() {
     let titleString: string = "Contacto";
     this.title.setTitle(titleString);
-    this.seo.generateTags({
-      slug: "Contacto"
-    });
   }
 }

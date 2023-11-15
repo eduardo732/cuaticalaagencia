@@ -13,6 +13,6 @@ export class ContactFormService {
 
   sendEmail(formData: any): Observable<any> {
     const url = `${this.baseUrl}/send-email`;
-    return this.http.post(url, formData);
+    return this.http.post(url, formData, { responseType: 'text' });
   }
 }

@@ -1,0 +1,7 @@
+<button
+  [ngClass]="{ 'error-button': isError, 'success-button': !isError }"
+  [type]="type"
+  [disabled]="isDisabled"
+>
+  {{ title }}
+</button>

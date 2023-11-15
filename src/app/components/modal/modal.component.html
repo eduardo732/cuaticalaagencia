@@ -1,7 +1,12 @@
 <div class="modal" (click)="close()">
-  <div class="modal-content" [ngClass]="{'error': isError}">
-    <h2 [ngStyle]="{'color': titleColor}">{{ title }}</h2>
+  <div class="modal-content" [ngClass]="{ error: isError }">
+    <h2 [ngStyle]="{ color: titleColor }">{{ title }}</h2>
     <p>{{ message }}</p>
-    <button (click)="close()">Cerrar</button>
+    <app-button
+      (click)="close()"
+      [title]="titleButton"
+      [isDisabled]="false"
+      [isError]="isError"
+    ></app-button>
   </div>
 </div>
