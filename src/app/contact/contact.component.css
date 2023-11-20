@@ -1,37 +1,30 @@
 /* Estilos base para todos los tamaños de pantalla */
 .contact-container {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   display: flex;
+  overflow-y: scroll;
 }
 
 .img-container img {
-  height: 100vh;
-  width: 100%; /* Cambiado a 100% para ocupar todo el ancho del contenedor */
   display: block;
-  margin: 0 auto;
-  position: relative;
+  object-fit: cover;
 }
 
 .contact-form {
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-direction: column;
-  position: relative;
   padding: 20px; /* Añadido relleno para mejorar la apariencia en pantallas más pequeñas */
 }
 
 .logo-container {
-  text-align: center;
-  height: auto; /* Cambiado a auto para adaptarse al contenido */
-  padding: 10px; /* Añadido relleno para mejorar la apariencia en pantallas más pequeñas */
-}
-
-.logo-container img {
-  width: 100%; /* Cambiado a 100% para ocupar todo el ancho del contenedor */
-  height: auto; /* Cambiado a auto para mantener la proporción original */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .social {
@@ -40,23 +33,50 @@
   margin-top: 20px; /* Reducido el espacio superior para pantallas más pequeñas */
 }
 
-/* Media queries para ajustes específicos en diferentes tamaños de pantalla */
 @media (min-width: 768px) {
   .img-container img {
     width: 50vw;
+    height: 100vh;
   }
 
   .logo-container img {
-    width: 20vw;
+    width: 25vw;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .img-container img {
     width: 40vw;
+    height: 100vh;
   }
 
   .logo-container img {
-    width: 15vw;
+    width: 25vw;
+    height: 35vh;
   }
 }
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .img-container img {
+    width: 100vw;
+    position: relative;
+    margin-bottom: 9%;
+  }
+  .logo-container img {
+    width: 80vw;
+  }
+  .contact-form {
+    width: 90vw;
+  }
+}
+
+
+
+
+
+
+
+
+

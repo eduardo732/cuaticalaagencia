@@ -1,6 +1,7 @@
 form {
   max-width: 400px;
   margin: auto;
+  font-size: 25px;
 }
 
 div {
@@ -16,7 +17,7 @@ label {
 
 input,
 textarea {
-  width: 100%;
+  width: 95%;
   padding: 8px;
   margin-top: 3px;
   margin-bottom: 10px;

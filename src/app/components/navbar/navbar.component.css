@@ -16,12 +16,10 @@
 	display: flex;
 	flex-direction: column;
 	cursor: pointer;
-	color: white;
+	color: #FF00E7;
+	transition: transform 0.3s ease;
 }
 
-.menu-icon:hover {
-	color: yellow;
-}
 
 .bar {
 	background-color: white;
@@ -72,4 +70,6 @@
 	margin-left: 20px;
 }
 
-
+.menu-icon:hover{
+  transform: scale(1.1); /* Escala el botón al hacer hover */
+}

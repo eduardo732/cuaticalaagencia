@@ -1,3 +1,8 @@
 .icons {
 	font-size: 25px;
+	transition: transform 0.3s ease;
+}
+
+.icons:hover{
+  transform: scale(1.1); /* Escala el botón al hacer hover */
 }

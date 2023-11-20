@@ -7,7 +7,9 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  faBars = faBars; // Asigna el ícono de menú a una propiedad
+  instagramColor: string = '#FF00E7';
+  linkedinColor: string = '#FF00E7';
+  faBars = faBars; 
   isMenuOpen: boolean = false;
   
 

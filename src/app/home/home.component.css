@@ -4,6 +4,7 @@
 	height: 100%;
 	overflow: hidden;
 	position: relative;
+	background-color: black;
 }
 
 /* Estilo para el slider de imágenes */
@@ -25,19 +26,5 @@
 .slide img {
 	width: 100%; /* Ancho de cada imagen en relación al slide */
 	height: 100%;
-	object-fit: fill; /* Ajusta la imagen al tamaño del contenedor */
-}
-
-/* Estilo para la frase */
-.caption {
-	position: absolute; /* Establece la posición absoluta para superponer la frase */
-	top: 90%; /* Alinea la frase verticalmente en el centro del slide */
-	left: 25%; /* Alinea la frase horizontalmente en el centro del slide */
-	transform: translate(-50%, -50%); /* Centra la frase correctamente */
-	font-size: 30px; /* Tamaño de fuente de la frase */
-	color: white; /* Color del texto */
-	background: rgba(0, 0, 0, 0); /* Fondo semitransparente para hacer que el texto sea legible */
-	padding: 20px 40px; /* Espaciado interior del cuadro de texto */
-	border-radius: 40px; /* Borde redondeado del cuadro de texto */
-	border: 1px solid white;
+	object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
 }
