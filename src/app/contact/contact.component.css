@@ -33,9 +33,9 @@
   margin-top: 20px; /* Reducido el espacio superior para pantallas más pequeñas */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .img-container img {
-    width: 50vw;
+    width: 40vw;
     height: 100vh;
   }
 
@@ -55,7 +55,7 @@
     height: 35vh;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .contact-container {
     flex-direction: column;
   }

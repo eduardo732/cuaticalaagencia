@@ -36,6 +36,7 @@
 .card img {
 	width: 400px;
 	height: 550px;
+	border-radius: 10px;
 }
 
 .card h1 {
@@ -53,4 +54,47 @@
 	font-size: 25px;
 	color: white;
 	margin-right: 85px;
+	text-align: justify;
+}
+
+@media (max-width: 1700px) {
+	.card h1 {
+		right: 1vw;
+		top: 0px;
+	}
+	.card p {
+		width: 60%;
+	}
+}
+
+@media (max-width: 1350px) {
+	.card {
+		width: 45%;
+	}
+	.card p {
+		width: 60%;
+	}
+	
+}
+
+@media (max-width: 1150px) {
+	.card p {
+		width: 65%;
+	}
+}
+
+@media (max-width: 950px) {
+	.title {
+		font-size: 45px;
+		margin-top: 100px;
+	}
+	.card {
+		width: 90%;
+	}
+	.card p {
+		width: 90%;
+		margin-right: 0;
+		margin-left: 2%;
+	}
+	
 }
