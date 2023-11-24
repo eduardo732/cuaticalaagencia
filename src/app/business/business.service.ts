@@ -50,6 +50,13 @@ export class BusinessService {
       title: "D I S E Ñ O Y \n D E S A R R O L L O \n W E B",
       text: "Nos enfocamos en desarrollar tu universo de marca digital con las herramientas necesarias para la proyección de identidad y servicios que se ajusten a la necesidad de tu marca.",
       arrow: ""
+    },
+    {
+      id: 6,
+      img: "/assets/business/img07.png",
+      title: "F O T O \n G R A \n F Í A",
+      text: "A través del objetivo, miramos de otra forma para capturar la escencia de un photocall, unas editoriales de moda, productos, bodegones, foodstyling, deco...",
+      arrow: ""
     }
   ]
 
