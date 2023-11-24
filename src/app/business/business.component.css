@@ -90,6 +90,13 @@
 	}
 	.card {
 		width: 90%;
+		margin-bottom: 80px;
+	}
+	.card img {
+		width: 100%;
+	}
+	.card h1 {
+		font-size: 35px;
 	}
 	.card p {
 		width: 90%;
