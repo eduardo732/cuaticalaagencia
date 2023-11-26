@@ -1,11 +1,12 @@
 button {
   background-color: #FF00E7;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px 15px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-family: 'StretchPro';
   transition: transform 0.3s ease; /* Agregada transición para suavizar los cambios de color del botón */
 }
 

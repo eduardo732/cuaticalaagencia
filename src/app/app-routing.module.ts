@@ -6,7 +6,7 @@ import { BusinessComponent } from './business/business.component';
 import { slideInOutAnimation } from './utils/animations';
 import { ContactComponent } from './contact/contact.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
@@ -26,7 +26,9 @@ const routes: Routes = [
   {
     path: 'contacto',
     component: ContactComponent,
-    data: { animation: slideInOutAnimation },
+    data: { 
+      animation: slideInOutAnimation,
+     },
   }
 ];
 

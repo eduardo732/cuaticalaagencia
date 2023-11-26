@@ -11,6 +11,8 @@
 .img-container img {
   display: block;
   object-fit: cover;
+  width: 40vw;
+  height: 100vh;
 }
 
 .contact-form {
@@ -23,8 +25,12 @@
 .logo-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  height: 200px;
+}
+.logo-container img {
+  width: 350px;
 }
 
 .social {
@@ -33,42 +39,28 @@
   margin: 20px 0 100px 0; 
 }
 
-@media (min-width: 750px) {
-  .img-container img {
-    width: 40vw;
-    height: 100vh;
-  }
 
-  .logo-container img {
-    width: 25vw;
-  }
-}
-
-@media (min-width: 1000px) {
-  .img-container img {
-    width: 40vw;
-    height: 100vh;
-  }
-
-  .logo-container img {
-    width: 25vw;
-    height: 35vh;
-  }
-}
 @media (max-width: 1000px) {
   .contact-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
   }
   .img-container img {
-    width: 100vw;
-    position: relative;
-    margin-bottom: 9%;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+
   }
-  .logo-container img {
-    width: 80vw;
-  }
+  
   .contact-form {
-    width: 90vw;
+    width: 100vw;
   }
 }
 

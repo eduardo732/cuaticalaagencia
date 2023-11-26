@@ -1,7 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+/* Fuente para la mayoría del texto */
+@font-face {
+  font-family: Adam-Medium;
+  src: url('assets/fonts/Adam-Medium.ttf');
+}
+
+/* Fuente para texto específico */
+@font-face {
+  font-family: StretchPro;
+  src: url('assets/fonts/StretchPro.otf');
+}
+
 html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	font-family: 'Adam-Medium';
+
 }
