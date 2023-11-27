@@ -5,6 +5,7 @@
   overflow: hidden;
   position: relative;
   display: flex;
+  flex-direction: row-reverse;
   overflow-y: scroll;
 }
 
@@ -42,7 +43,8 @@
 
 @media (max-width: 1000px) {
   .contact-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
   }
 
   .img-container {
@@ -53,15 +55,13 @@
   }
   .img-container img {
     width: 90%;
-    height: 100%;
+    height: 90%;
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
-
   }
   
-  .contact-form {
-    width: 100vw;
-  }
+  
+  
 }
 
 

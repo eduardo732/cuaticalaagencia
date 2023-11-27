@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { slideInOutAnimation } from '../utils/animations';
 import { Title } from '@angular/platform-browser';
 import { SeoService } from '../utils/seo.service';
+
 
 
 @Component({
@@ -16,7 +17,7 @@ export class ContactComponent {
 
   constructor(
     private title: Title,
-    private seo: SeoService
+    private seo: SeoService,
   ) {}
 
   ngOnInit() {
