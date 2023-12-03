@@ -13,7 +13,7 @@ export class BusinessService {
       id: 0,
       img: "/assets/business/img01.jpg",
       title: "B R A N \n D I N G",
-      text: "Te ayudamos a crear, diseña e implementar tu propuesta de valor e identidad de marca de forma creativa. Construimos tu historia para generar conexiones con tu audiencia y diferentes stakeholders.",
+      text: "Te ayudamos a crear, diseñar e implementar tu propuesta de valor e identidad de marca de forma creativa. Construimos tu historia para generar conexiones con tu audiencia y diferentes stakeholders.",
       arrow: ""
     },
     {

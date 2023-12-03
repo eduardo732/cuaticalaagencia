@@ -1,10 +1,19 @@
 <div class="business-container" [@slideInOutAnimation]>
-	<div class="title">S E R V I C I O S</div>
-	<div class="business-list">
-		<div class="card" *ngFor="let business of businessList">
-			<img [src]="business.img" [alt]="business.id">
-			<h1>{{business.title}}</h1>
-			<p>{{business.text}}</p>
-		</div>
-	</div>
+  <div class="title">S E R V I C I O S</div>
+  <div class="business-list">
+    <div
+      class="card"
+      *ngFor="let business of businessList"
+    >
+      <img 
+      [src]="business.img"
+      [alt]="business.id"
+      (click)="toggleDescription(business)"
+      />
+      <h1>{{ business.title }}</h1>
+      <div class="box" *ngIf="selectedBusiness === business">
+        <p>{{ business.text }}</p>
+      </div>
+    </div>
+  </div>
 </div>

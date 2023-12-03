@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, HostListener, ElementRef } from '@angular/core';
 import { Business } from './business';
 import { BusinessService } from './business.service';
 import { slideInOutAnimation } from '../utils/animations';
@@ -14,8 +14,13 @@ import { SeoService } from '../utils/seo.service';
 export class BusinessComponent {
   businessList: Business[] = [];
   businessService: BusinessService = inject(BusinessService);
+  selectedBusiness: Business | null = null;
 
-  constructor( private title: Title, private seo: SeoService ) {
+  constructor( 
+    private title: Title,
+    private seo: SeoService,
+    private elRef: ElementRef
+  ) {
     this.businessList = this.businessService.getAllBusiness();
   }
   
@@ -23,4 +28,18 @@ export class BusinessComponent {
     let titleString: string = "Cuáticos";
     this.title.setTitle(titleString);
   }
+
+  toggleDescription(business: Business): void {
+    this.selectedBusiness = this.selectedBusiness === business ? null : business;
+  }
+
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: Event): void {
+    const nodeName = (event.target as HTMLElement).nodeName;
+    if(nodeName === 'DIV') {
+      this.selectedBusiness = null;
+    }
+  }
+  
 }
