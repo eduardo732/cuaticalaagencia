@@ -2,25 +2,8 @@ import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ContactFormService } from './contact-form.service';
 import { ModalService } from '../../components/modal/modal.service';
+import { ContactFormModel, Modal } from './interfaces';
 
-
-interface ContactFormModel {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-  nameError?: string;
-  emailError?: string;
-  subjectError?: string;
-  messageError?: string;
-}
-
-interface Modal {
-  title: string;
-  message: string;
-  isVisible: boolean;
-  isError: boolean;
-}
 
 @Component({
   selector: 'app-contact-form',
@@ -28,15 +11,17 @@ interface Modal {
   styleUrls: ['./contact-form.component.css'],
 })
 export class ContactFormComponent {
+  private ORGANIZATION: string = 'CUATICA_ORG';
+
   typeButton: string = 'submit';
   titleButton: string = '¡ATRÉVETE!';
-  model: ContactFormModel = {
+  contactFormModel: ContactFormModel = {
     name: '',
     email: '',
     subject: '',
     message: '',
+    organization: '',
   };
-
   modal: Modal = {
     title: '',
     message: '',
@@ -60,7 +45,10 @@ export class ContactFormComponent {
       return this.errorMessages(contactForm);
     }
 
-    const formData: ContactFormModel = contactForm.value;
+    const formData: ContactFormModel = {
+      ...contactForm.value,
+       organization: this.ORGANIZATION
+    };
 
     this.contactFormService.sendEmail(formData).subscribe({
       next: (response) => {
@@ -70,27 +58,28 @@ export class ContactFormComponent {
       error: (error) => {
         this.openErrorModal();
         console.error(error);
+        contactForm.reset()
       },
       complete: () => contactForm.reset(),
     });
   }
 
   validateEmail() {
-    this.model.emailError = '';
-    if (this.model.email) {
+    this.contactFormModel.emailError = '';
+    if (this.contactFormModel.email) {
       const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-      if (!emailRegex.test(this.model.email)) {
-        this.model.emailError = 'E-mail no es válido';
+      if (!emailRegex.test(this.contactFormModel.email)) {
+        this.contactFormModel.emailError = 'E-mail no es válido';
       }
     }
   }
 
   private errorMessages(contactForm: NgForm) {
-    this.model.nameError = contactForm.controls['name'].hasError('required') ? 'Nombre es requerido' : '';
-    this.model.emailError = contactForm.controls['email'].hasError('required') ? 'E-mail es requerido' :
+    this.contactFormModel.nameError = contactForm.controls['name'].hasError('required') ? 'Nombre es requerido' : '';
+    this.contactFormModel.emailError = contactForm.controls['email'].hasError('required') ? 'E-mail es requerido' :
       contactForm.controls['email'].hasError('pattern') ? 'E-mail no es válido' : '';
-    this.model.subjectError = contactForm.controls['subject'].hasError('required') ? 'Asunto es requerido' : '';
-    this.model.messageError = contactForm.controls['message'].hasError('required') ? 'Mensaje es requerido' : '';
+    this.contactFormModel.subjectError = contactForm.controls['subject'].hasError('required') ? 'Asunto es requerido' : '';
+    this.contactFormModel.messageError = contactForm.controls['message'].hasError('required') ? 'Mensaje es requerido' : '';
   }
 
   openSuccessModal() {

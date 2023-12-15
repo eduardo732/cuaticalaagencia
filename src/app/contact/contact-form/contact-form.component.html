@@ -12,11 +12,11 @@
       type="text"
       id="name"
       name="name"
-      [(ngModel)]="model.name"
+      [(ngModel)]="contactFormModel.name"
       required
     />
-    <div *ngIf="model.nameError" class="error-message">
-      {{ model.nameError }}
+    <div *ngIf="contactFormModel.nameError" class="error-message">
+      {{ contactFormModel.nameError }}
     </div>
   </div>
   <!-- Repite el patrón para otros campos -->
@@ -26,13 +26,13 @@
       type="email"
       id="email"
       name="email"
-      [(ngModel)]="model.email"
+      [(ngModel)]="contactFormModel.email"
       required
       pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
       (ngModelChange)="validateEmail()"
     />
-    <div *ngIf="model.emailError" class="error-message">
-      {{ model.emailError }}
+    <div *ngIf="contactFormModel.emailError" class="error-message">
+      {{ contactFormModel.emailError }}
     </div>
   </div>
 
@@ -42,11 +42,11 @@
       type="text"
       id="subject"
       name="subject"
-      [(ngModel)]="model.subject"
+      [(ngModel)]="contactFormModel.subject"
       required
     />
-    <div *ngIf="model.subjectError" class="error-message">
-      {{ model.subjectError }}
+    <div *ngIf="contactFormModel.subjectError" class="error-message">
+      {{ contactFormModel.subjectError }}
     </div>
   </div>
   <div>
@@ -54,11 +54,11 @@
     <textarea
       id="message"
       name="message"
-      [(ngModel)]="model.message"
+      [(ngModel)]="contactFormModel.message"
       required
     ></textarea>
-    <div *ngIf="model.messageError" class="error-message">
-      {{ model.messageError }}
+    <div *ngIf="contactFormModel.messageError" class="error-message">
+      {{ contactFormModel.messageError }}
     </div>
   </div>
   <div class="button-area">
