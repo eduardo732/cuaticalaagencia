@@ -1,6 +1,6 @@
 <nav class="navbar" routerLinkActive="contact-nav">
   <div class="menu-icon" [ngClass]="menuClass" (click)="toggleMenu()">
-    <i class="fas fa-bars fa-3x"></i>
+      <i class="fas fa-bars fa-3x" *ngIf="!isMenuOpen"></i>
   </div>
   <app-socialmedia class="social-media" [instagramColor]="instagramColor" [linkedinColor]="linkedinColor"></app-socialmedia>
 

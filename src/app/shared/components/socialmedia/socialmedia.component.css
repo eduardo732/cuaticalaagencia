@@ -2,7 +2,7 @@
 	display: flex;
 }
 .icon {
-	font-size: 25px;
+	font-size: 20px;
 	transition: transform 0.3s ease;
 }
 
@@ -12,6 +12,6 @@
 
 @media (max-width: 800px) {
 	.icon {
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
