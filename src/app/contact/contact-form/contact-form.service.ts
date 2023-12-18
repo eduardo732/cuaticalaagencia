@@ -8,8 +8,8 @@ import { ContactFormModel } from './interfaces';
 })
 export class ContactFormService {
 
-  // private BASE_URL: string = 'https://sendemailservice-dev-tjjk.1.us-1.fl0.io';
-  private BASE_URL: string = 'http://localhost:3000';
+  private BASE_URL: string = 'https://sendemailservice-dev-tjjk.1.us-1.fl0.io';
+  // private BASE_URL: string = 'http://localhost:3000';
 
   constructor(private http: HttpClient) {}
 

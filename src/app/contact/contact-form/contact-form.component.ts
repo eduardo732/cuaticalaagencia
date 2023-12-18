@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ContactFormService } from './contact-form.service';
-import { ModalService } from '../../components/modal/modal.service';
+import { ModalService } from '../modal/modal.service';
 import { ContactFormModel, Modal } from './interfaces';
 
 
@@ -92,7 +92,7 @@ export class ContactFormComponent {
   openErrorModal() {
     this.modal.isError = true;
     this.modal.title = 'Error';
-    this.modal.message = 'Hubo un problema al enviar tu mensaje. Tambíen puedes comunicarte con nosotros escribiendo a hola@cuaticalaagencia.com';
+    this.modal.message = 'Hubo un problema al enviar tu mensaje. Tambíen puedes comunicarte con nosotros escribiendo a: hola@cuaticalaagencia.com'
     this.modalService.openModal(); 
   }
 

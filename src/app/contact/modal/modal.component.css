@@ -30,6 +30,8 @@ h2 {
 p {
 	font-size: 20px;
 	padding: 15px;
+  width: 400px;
+  text-align: center;
 }
 
 button {
@@ -60,3 +62,12 @@ button:active{
 }
 
 /* Otros estilos según sea necesario */
+
+@media (max-width: 550px) {
+  .modal-content {
+    width: 80%;
+  }
+  p {
+    width: 100%;
+  }
+}

@@ -41,6 +41,9 @@
   align-items: center;
   margin: 20px 0 100px 0; 
 }
+.social h3 {
+  margin-top: 20px;
+}
 
 
 @media (max-width: 1000px) {

@@ -1,7 +1,17 @@
 /* Fuente para la mayoría del texto */
 @font-face {
+  font-family: Adam-Light;
+  src: url('assets/fonts/Adam-Light.ttf');
+}
+
+@font-face {
   font-family: Adam-Medium;
   src: url('assets/fonts/Adam-Medium.ttf');
+}
+
+@font-face {
+  font-family: Adam-Bold;
+  src: url('assets/fonts/Adam-Bold.ttf');
 }
 
 /* Fuente para texto específico */
@@ -18,3 +28,5 @@ html, body {
 	font-family: 'Adam-Medium';
 
 }
+
+

@@ -40,6 +40,7 @@
 	border-radius: 10px;
 	box-shadow: 10px 10px 10px black;
 	cursor: pointer;
+	transition: box-shadow 0.3s ease-in;
 }
 .card img:hover {
 	box-shadow: 10px 10px 10px white;

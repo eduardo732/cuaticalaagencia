@@ -1,9 +1,9 @@
 import { Component, inject, HostListener, ElementRef } from '@angular/core';
 import { Business } from './business';
 import { BusinessService } from './business.service';
-import { slideInOutAnimation } from '../utils/animations';
+import { slideInOutAnimation } from '../shared/utils/animations';
 import { Title } from '@angular/platform-browser';
-import { SeoService } from '../utils/seo.service';
+import { SeoService } from '../shared/utils/seo.service';
 
 @Component({
   selector: 'app-business',

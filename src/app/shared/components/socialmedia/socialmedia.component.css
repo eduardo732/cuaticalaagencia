@@ -1,8 +1,17 @@
-.icons {
+.icon-container {
+	display: flex;
+}
+.icon {
 	font-size: 25px;
 	transition: transform 0.3s ease;
 }
 
-.icons:hover{
+.icon:hover{
   transform: scale(1.1); /* Escala el botón al hacer hover */
+}
+
+@media (max-width: 800px) {
+	.icon {
+		font-size: 20px;
+	}
 }

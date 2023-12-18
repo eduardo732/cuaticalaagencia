@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { slideInOutAnimation } from '../utils/animations';
+import { slideInOutAnimation } from '../shared/utils/animations';
 import { Title } from '@angular/platform-browser';
-import { SeoService } from '../utils/seo.service';
+import { SeoService } from '../shared/utils/seo.service';
 
 
 @Component({
