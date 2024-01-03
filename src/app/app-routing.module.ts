@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from '../../home/home.component';
-import { AboutComponent } from '../../about/about.component';
-import { BusinessComponent } from '../../business/business.component';
-import { slideInOutAnimation } from '../utils/animations';
-import { ContactComponent } from '../../contact/contact.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { BusinessComponent } from './business/business.component';
+import { slideInOutAnimation } from './shared/utils/animations';
+import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
   {
