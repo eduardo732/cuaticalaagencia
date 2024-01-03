@@ -24,13 +24,8 @@ export class NavbarComponent {
     });
   }
 
-  // this.menuClass = 'contact-nav';
   private getMenuClass(url: string): string {
-    if (url.includes('/contacto')) {
-      return 'contact-nav';
-    } else {
-      return 'menu-icon';
-    }
+    return url.includes('/contacto') ? 'contact-nav' : 'menu-icon';
   }
 
   toggleMenu() {
