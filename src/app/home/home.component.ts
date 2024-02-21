@@ -1,4 +1,4 @@
-import { Component  } from '@angular/core';
+import { Component } from '@angular/core';
 import { slideInOutAnimation } from '../shared/utils/animations';
 import { Router } from '@angular/router';
 
@@ -6,14 +6,14 @@ import { Router } from '@angular/router';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  animations: [slideInOutAnimation]
+  animations: [slideInOutAnimation],
 })
 export class HomeComponent {
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
-    const slider = document.querySelector(".slider") as HTMLElement;
-    const images = document.querySelectorAll(".slider img");
+    const slider = document.querySelector('.slider') as HTMLElement;
+    const images = document.querySelectorAll('.slider img');
     const imageCount = images.length;
     const imageWidth = images[0].clientWidth;
     let currentImage = 0;
@@ -29,6 +29,6 @@ export class HomeComponent {
   }
 
   goToContact(): void {
-    this.router.navigate(['/contacto'])
+    this.router.navigate(['/contacto']);
   }
 }
