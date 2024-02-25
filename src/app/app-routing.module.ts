@@ -1,34 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { BusinessComponent } from './business/business.component';
-import { slideInOutAnimation } from './shared/utils/animations';
-import { ContactComponent } from './contact/contact.component';
+import { slideInOutAnimation } from './home/components/shared/utils/animations';
 
 export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'Cuática La Agencia',
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
     data: { animation: slideInOutAnimation },
   },
   {
-    path: 'nosotros',
-    component: AboutComponent,
-    data: { animation: slideInOutAnimation },
-  },
-  {
-    path: 'servicios',
-    component: BusinessComponent,
-    data: { animation: slideInOutAnimation },
-  },
-  {
-    path: 'contacto',
-    component: ContactComponent,
-    data: { 
-      animation: slideInOutAnimation,
-     },
+    path: '**', 
+    pathMatch: 'full', 
+    redirectTo: ''
   }
 ];
 

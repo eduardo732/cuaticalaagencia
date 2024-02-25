@@ -1,0 +1,61 @@
+/* Contenedor principal */
+.container {
+  width: 100%;
+  height: 100vh; /* Usar altura del viewport */
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* Estilo del slider */
+.slider {
+  display: flex;
+  width: 500%; /* Ancho total del slider (5 imágenes en este caso) */
+  height: 100%;
+  transition: transform 1.5s ease; 
+}
+
+/* Estilo de cada slide */
+.slide {
+  flex: 20%; /* Ancho de cada slide en relación al slider */
+  position: relative;
+}
+
+/* Estilo de las imágenes */
+.slide img {
+  width: 100%; /* Ancho de cada imagen en relación al slide */
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+/* Media query para ajustes en pantallas más pequeñas */
+@media (max-width: 1200px) {
+	.slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+  .slide img {
+		height: 35vh;	
+
+  }
+}
+
+@media (max-width: 1000px) {
+  .slide img {
+		height: 30vh;		
+  }
+}
+
+@media (max-width: 800px) {
+  .slide img {
+		height: 25vh;		
+  }
+}
+
+@media (max-width: 400px) {
+  .slide img {
+		height: 20vh;		
+  }
+}

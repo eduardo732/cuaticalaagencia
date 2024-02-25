@@ -6,13 +6,13 @@ form {
 }
 
 div {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   transition: margin-bottom 0.3s ease; /* Agregada transición para suavizar los cambios de margen */
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   transition: color 0.3s ease; /* Agregada transición para suavizar los cambios de color */
 }
 
@@ -21,7 +21,7 @@ textarea {
   width: 95%;
   padding: 8px;
   margin-top: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   transition: border-color 0.3s ease; /* Agregada transición para suavizar los cambios de borde */
