@@ -1,0 +1,19 @@
+<div class="contact-container" id="contact" [@slideInOutAnimation]>
+  <div class="contact-form" data-aos="flip-down" data-aos-duration="2000">
+    <div class="logo-container">
+      <img src="/assets/contact/logo.svg" alt="Imagen 2" />
+    </div>
+    <app-contact-form></app-contact-form>
+    <div class="social">
+      <app-socialmedia
+        [instagramColor]="instagramColor"
+        [linkedinColor]="linkedinColor"
+      ></app-socialmedia>
+      <h3>hola@cuaticalaagencia.com</h3>
+    </div>
+  </div>
+  <div class="img-container" data-aos="flip-down" data-aos-duration="2000">
+    <img src="/assets/contact/img.svg" alt="Imagen 1" />
+  </div>
+  <app-spinner></app-spinner>
+</div>

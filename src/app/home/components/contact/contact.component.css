@@ -1,13 +1,12 @@
 /* Estilos base para todos los tamaños de pantalla */
 .contact-container {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: row-reverse;
-  overflow-y: scroll;
-}
+ }
 
 .img-container img {
   display: block;
@@ -39,7 +38,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px 0 100px 0; 
+  margin: 0; 
 }
 .social h3 {
   margin-top: 20px;
