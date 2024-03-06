@@ -39,3 +39,9 @@
     height: auto;
   }
 }
+
+@media (min-width: 1680px) {
+  .container {
+    height: 100vh;
+  }
+}
