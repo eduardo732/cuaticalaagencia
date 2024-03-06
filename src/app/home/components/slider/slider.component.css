@@ -26,36 +26,22 @@
 .slide img {
   width: 100%; /* Ancho de cada imagen en relación al slide */
   height: 100%;
-  object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
 }
 
-/* Media query para ajustes en pantallas más pequeñas */
-@media (max-width: 1200px) {
-	.slide {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+@media (min-width: 768px) {
   .slide img {
-		height: 35vh;	
-
+    object-fit: cover;
   }
 }
 
-@media (max-width: 1000px) {
-  .slide img {
-		height: 30vh;		
+@media (min-width: 1024px) {
+  .container {
+    height: auto;
   }
 }
 
-@media (max-width: 800px) {
-  .slide img {
-		height: 25vh;		
-  }
-}
-
-@media (max-width: 400px) {
-  .slide img {
-		height: 20vh;		
+@media (min-width: 1680px) {
+  .container {
+    height: 100vh;
   }
 }

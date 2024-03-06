@@ -1,21 +1,24 @@
-<div class="container" id="slider" [@slideInOutAnimation] (click)="goToContact()">
+<div
+  class="container"
+  id="slider"
+  [@slideInOutAnimation]
+  (click)="goToContact()"
+>
   <div class="slider">
     <div class="slide">
-      <img src="/assets/slider/BANNER-01.svg" alt="Imagen 1">
+      <img [src]="images[0]" alt="Cuatica La Moda" />
     </div>
     <div class="slide">
-      <img src="/assets/slider/BANNER-02.svg" alt="Imagen 2">
+      <img [src]="images[1]" alt="Cuatica LifeStyle" />
     </div>
     <div class="slide">
-      <img src="/assets/slider/BANNER-03.svg" alt="Imagen 3">
+      <img [src]="images[2]" alt="Cuatica La Gastro" />
     </div>
     <div class="slide">
-      <img src="/assets/slider/BANNER-04.svg" alt="Imagen 4">
+      <img [src]="images[3]" alt="Cuatica La Belleza" />
     </div>
     <div class="slide">
-      <img src="/assets/slider/BANNER-05.svg" alt="Imagen 5">
+      <img [src]="images[4]" alt="Cuatica La Conexion" />
     </div>
   </div>
 </div>
-
-
