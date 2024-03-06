@@ -35,7 +35,7 @@
 }
 
 @media (min-width: 1024px) {
-  slide img {
-
+  .container {
+    height: auto;
   }
 }

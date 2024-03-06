@@ -94,7 +94,7 @@
 		width: 75%;
 		display: flex;
 		align-items: center;
-		margin-top: 30px;
+		margin-top: 80px;
 	}
 	.paragraph {
 		width: 100%;
@@ -127,7 +127,6 @@
 		margin-bottom: 150px;
 	}
 	.paragraph-container {
-		margin-top: 15px;
 		width: 100%;
 	}
 	.paragraph {
