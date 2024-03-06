@@ -28,7 +28,6 @@ export class SliderComponent {
   }
 
   goToContact(): void {
-    // this.router.navigate(['/contacto']);
     if(document.getElementById('contact')) {
       document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'});
     } else {
