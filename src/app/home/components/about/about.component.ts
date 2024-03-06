@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { slideInOutAnimation } from '../shared/utils/animations';
-import { Title } from '@angular/platform-browser';
-import { SeoService } from '../shared/utils/seo.service';
 
 
 @Component({
@@ -10,11 +8,4 @@ import { SeoService } from '../shared/utils/seo.service';
   styleUrls: ['./about.component.css'],
   animations: [slideInOutAnimation]
 })
-export class AboutComponent {
-  constructor( private title: Title, private seo: SeoService ) {}
-
-  ngOnInit() {
-    let titleString: string = "Nosotros";
-    this.title.setTitle(titleString);
-  }
-}
+export class AboutComponent {}

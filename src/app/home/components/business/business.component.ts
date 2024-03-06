@@ -16,19 +16,10 @@ export class BusinessComponent {
   businessService: BusinessService = inject(BusinessService);
   selectedBusiness: Business | null = null;
 
-  constructor( 
-    private title: Title,
-    private seo: SeoService,
-    private elRef: ElementRef
-  ) {
+  constructor() {
     this.businessList = this.businessService.getAllBusiness();
   }
   
-  ngOnInit() {
-    let titleString: string = "Cuáticos";
-    this.title.setTitle(titleString);
-  }
-
   toggleDescription(business: Business): void {
     this.selectedBusiness = this.selectedBusiness === business ? null : business;
   }
