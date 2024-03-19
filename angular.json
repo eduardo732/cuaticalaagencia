@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cuatica-landing-page:build:production"
+              "buildTarget": "cuatica-landing-page:build:production"
             },
             "development": {
-              "browserTarget": "cuatica-landing-page:build:development"
+              "buildTarget": "cuatica-landing-page:build:development"
             }
           },
           "defaultConfiguration": "development"
